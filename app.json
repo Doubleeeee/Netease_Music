@@ -20,13 +20,13 @@
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "image/cm2_btm_icn_discovery.png",
-        "selectedIconPath": "image/cm2_btm_icn_discovery_prs.png"
+        "selectedIconPath": "image/cm2_btm_icn_discovery_select.png"
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
         "iconPath": "image/cm2_btm_icn_music.png",
-        "selectedIconPath": "image/cm2_btm_icn_music_prs.png"
+        "selectedIconPath": "image/cm2_btm_icn_music_select.png"
       }
     ]
   }
