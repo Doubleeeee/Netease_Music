@@ -7,7 +7,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "black",
+    "navigationBarBackgroundColor": "#df403a",
     "navigationBarTitleText": "音乐",
     "navigationBarTextStyle": "black"
   },
