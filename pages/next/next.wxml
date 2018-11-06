@@ -1,0 +1,11 @@
+<!-- next.wxml -->
+<view class='container'>
+  <view class='userinfo'>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover">
+    </image>
+  </view>
+  <view class='next-content'>
+    <input class="content-text" type='text' placeholder='请输入搜索内容'></input>
+    <button type='button' class='content-btn'>搜索</button>
+  </view>
+</view>
