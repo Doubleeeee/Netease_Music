@@ -1,36 +1,33 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/next/next",
     "pages/logs/logs",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/friend/friend"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "weChat",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "音乐",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#ffffff",
-    "selectedColor": "#000000",
     "backgroundColor": "#ffffff",
-    "list": [{
-      "pagePath": "pagePath",
-      "text": "text",
-      "iconPath": "iconPath",
-      "selectedIconPath": "selectedIconPath"
-    },{
-      "pagePath": "pagePath",
-      "text": "text",
-      "iconPath": "iconPath",
-      "selectedIconPath": "selectedIconPath"
-    },{
-      "pagePath": "pagePath",
-      "text": "text",
-      "iconPath": "iconPath",
-      "selectedIconPath": "selectedIconPath"
-    }]
-
+    "selectedColor": "#e43130",
+    "color": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/cm2_btm_icn_discovery.png",
+        "selectedIconPath": "image/cm2_btm_icn_discovery_prs.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "image/cm2_btm_icn_music.png",
+        "selectedIconPath": "image/cm2_btm_icn_music_prs.png"
+      }
+    ]
   }
 }
