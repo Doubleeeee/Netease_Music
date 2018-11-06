@@ -1,13 +1,32 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/next/next",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/friend/friend"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "weChat",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "音乐",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#e43130",
+    "color": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/cm2_btm_icn_discovery.png",
+        "selectedIconPath": "image/cm2_btm_icn_discovery_prs.png"
+      },
+      {
+        "pagePath": "pages/friend/friend",
+        "text": "我的",
+        "iconPath": "image/cm2_btm_icn_music.png",
+        "selectedIconPath": "image/cm2_btm_icn_music_prs.png"
+      }
+    ]
   }
 }
