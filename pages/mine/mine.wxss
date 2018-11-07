@@ -1,0 +1,100 @@
+.menu{
+  height: 558rpx;
+}
+.localsongs .icon{
+  float: left;
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 34rpx;
+  margin-top: 30rpx;
+}
+.content{
+float: left;
+width: 82%;
+margin-left: 40rpx;
+padding-top: 30rpx;
+padding-bottom: 30rpx;
+border-bottom: 0.1rpx solid rgba(211, 205, 205, 0.3);
+position: relative;
+/* display: flex;
+align-items: center;
+justify-content: space-between; */
+}
+.font{
+  font-size: 28rpx;
+}
+.quanlity{
+  font-size: 28rpx;
+  padding-right: 30rpx;
+  color: #DCDCDC;
+  position: absolute;
+  right: 10rpx;
+  top: 45rpx;
+}
+.quanlity-icon{
+  width: 20rpx;
+  height: 20rpx;
+ position: absolute;
+  right: 10rpx;
+  top: 55rpx;
+}
+.createSongs{
+  height: 60rpx;
+  background:#DCDCDC
+}
+.createSongs{
+  position: relative;
+}
+.createSongs text{
+  font-size: 12px;
+  margin-left: 50rpx;
+  color: rgb(161, 150, 150)
+}
+.createSongs image:first-child{
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+}
+.createSongs image:last-child{
+  width: 60rpx;
+  height: 60rpx;
+   position: absolute;
+  right: 20rpx
+}
+.sheetInfo-icon{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  float: left
+}
+.sheetInfo-text{
+  float: left;
+  position: relative
+}
+.sheetInfo-text p{
+  display: block;
+}
+.sheetInfo-text p:first-child{
+  font-size: 28rpx;
+  margin: 10rpx 0 0 10rpx;
+}
+.sheetInfo-text p:nth-child(2){
+  font-size: 24rpx;
+  margin:10rpx 0 0 10rpx;
+  color: rgb(161, 150, 150)
+}
+.sheetInfo-text image{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 560rpx;
+  top: 30rpx;
+}
+.hide{
+  display: none
+}
+.show{
+  display: block
+}

@@ -1,0 +1,9 @@
+<!--components/sheetInfo/sheetInfo.wxml-->
+<view class='sheetInfo'>
+  <image class='sheetInfo-icon' src='../../image/cm2_default_artist_banner@2x.jpg'></image>
+  <view class='sheetInfo-text'>
+    <p>我喜欢的音乐</p>
+    <p>113首，已下载2首</p>
+    <image src='../../image/aal.png'></image>
+  </view>
+</view>

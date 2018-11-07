@@ -1,0 +1,30 @@
+/* components/sheetInfo/sheetInfo.wxss */
+.sheetInfo-icon{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  float: left
+}
+.sheetInfo-text{
+  float: left;
+  position: relative
+}
+.sheetInfo-text p{
+  display: block;
+}
+.sheetInfo-text p:first-child{
+  font-size: 28rpx;
+  margin: 10rpx 0 0 10rpx;
+}
+.sheetInfo-text p:nth-child(2){
+  font-size: 24rpx;
+  margin:10rpx 0 0 10rpx;
+  color: rgb(161, 150, 150)
+}
+.sheetInfo-text image{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 560rpx;
+  top: 30rpx;
+}

@@ -1,0 +1,52 @@
+<!--mine.wxml-->
+<view class='menu'>
+  <view class='localsongs'>
+    <image class='icon' src='../../image/cm2_btm_icn_music_select.png'></image>
+    <view class='content'>
+      <text class='font'>本地音乐</text>
+      <text class='quanlity'>2</text>
+      <image class='quanlity-icon' src='../../image/a6a.png'></image>
+    </view>
+  </view>
+  <view class='localsongs'>
+    <image class='icon' src='../../image/cm2_discover_icn_radio@2x.png'></image>
+    <view class='content'>
+      <text class='font'>最近播放</text>
+      <text class='quanlity'>100</text>
+      <image class='quanlity-icon' src='../../image/a6a.png'></image>
+    </view>
+  </view>
+  <view class='localsongs'>
+    <image class='icon' src='../../image/cm2_list_icn_rdi_new@2x.png'></image>
+    <view class='content'>
+      <text class='font'>我的电台</text>
+      <text class='quanlity'>0</text>
+      <image class='quanlity-icon' src='../../image/a6a.png'></image>
+    </view>
+  </view>
+  <view class='localsongs'>
+    <image class='icon' src='../../image/cm4_my_icn_fav@2x.png'></image>
+    <view class='content'>
+      <text class='font'>我的收藏</text>
+      <text class='quanlity'>7</text>
+      <image class='quanlity-icon' src='../../image/a6a.png'></image>
+    </view>
+  </view>
+  <view class='localsongs'>
+    <image class='icon' src='../../image/cm2_list_icn_artists_new@2x.png'></image>
+    <view class='content'>
+      <text class='font'>Sati空间</text>
+      <text class='quanlity'>特别的聆听模式</text>
+      <image class='quanlity-icon' src='../../image/a6a.png'></image>
+    </view>
+  </view>
+</view>
+<view class='createSongs'>
+  <image src='../../image/a6a.png'></image>
+  <text bindtap="onChangeShowState">我创建的歌单 ({{createSongs}})</text>
+  <image src='../../image/cm2_list_btn_more@2x.png' bindtap="showDialog"></image>
+</view>
+<!--创建的菜单组件-->
+<sheetInfo id='sheetInfo' class="{{showView?'show':'hide'}}"></sheetInfo>
+<!--歌单弹框组件-->
+<dialog id='dialog'></dialog>

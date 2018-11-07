@@ -1,25 +1,33 @@
-// pages/next/next.js
+//mine.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    createSongs: '2',
+    showView: true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    showView: (options.showView == "true" ? true : false)
+  }, onChangeShowState: function () {
+    var that = this;
+    that.setData({
+      showView: (!that.data.showView)
+    })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    this.sheetInfo = this.selectComponent("#sheetInfo");
+    this.dialog = this.selectComponent("#dialog");
+  }, showDialog() {
+    this.dialog.showDialog();
   },
 
   /**

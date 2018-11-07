@@ -1,3 +1,11 @@
+
 {
-  
+  "navigationBarBackgroundColor": "#CD2626",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "我的音乐",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "sheetInfo": "/components/sheetInfo/sheetInfo",
+    "dialog":"/components/Dialog/dialog"
+  }
 }

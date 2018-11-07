@@ -1,0 +1,39 @@
+<!--components/Didlog/dialog.wxml-->
+<view class='container' hidden="{{!isShow}}">
+  <view class='mask' bindtap="hideDialog"></view>
+  <view class='dialog'>
+    <!-- <view class='dialog-title'>{{ title }}</view>
+    <view class='dialog-content'>{{ content }}</view>
+    <view class='dialog-footer'>
+      <view class='dialog-btn' catchtap='_cancelEvent'>{{ cancelText }}</view>
+      <view class='dialog-btn' catchtap='_confirmEvent'>{{ confirmText }}</view>
+    </view> -->
+    <view class='dialog-title'>
+      <text>我创建的歌单（1）</text>
+    </view>
+    <view class='dialog-info'>
+      <image class='icon' src='../../image/cm2_lay_icn_fav_new@2x.png'></image>
+      <view class='content'>
+        <text class='font'>新建歌单</text>
+      </view>
+    </view>
+    <view class='dialog-info'>
+      <image class='icon' src='../../image/cm2_btm_icn_music_select.png'></image>
+      <view class='content'>
+        <text class='font'>管理歌单</text>
+      </view>
+    </view>
+    <view class='dialog-info'>
+      <image class='icon' src='../../image/cm2_btm_icn_music_select.png'></image>
+      <view class='content'>
+        <text class='font'>截图导入歌单</text>
+      </view>
+    </view>
+    <view class='dialog-info'>
+      <image class='icon' src='../../image/cm2_list_icn_recent_new@2x.png'></image>
+      <view class='content'>
+        <text class='font'>恢复歌单</text>
+      </view>
+    </view>
+  </view>
+</view>
