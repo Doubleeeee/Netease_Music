@@ -1,6 +1,10 @@
 <!--index.wxml-->
 <view class="main-container">
-  <view class="main-tar">
-    
+  <view class="main-tar" bindtap='changeTab'>
+    <view class='tar-nav' id='kk'><text>推荐</text></view>
+    <view class='tar-nav' id='friend'><text class='visited'>朋友</text></view>
+  </view>
+  <view class='main-content'>
+    <friend id="friendTarget"></friend>
   </view>
 </view>
