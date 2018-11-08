@@ -1,6 +1,6 @@
 <!--mine.wxml-->
 <view class='menu'>
-  <view class='localsongs'>
+  <view class='localsongs' bindtap='jump'>
     <image class='icon' src='../../image/cm2_btm_icn_music_select.png'></image>
     <view class='content'>
       <text class='font'>本地音乐</text>
@@ -8,7 +8,7 @@
       <image class='quanlity-icon' src='../../image/a6a.png'></image>
     </view>
   </view>
-  <view class='localsongs'>
+  <view class='localsongs' bindtap='jump'>
     <image class='icon' src='../../image/cm2_discover_icn_radio@2x.png'></image>
     <view class='content'>
       <text class='font'>最近播放</text>
@@ -16,7 +16,7 @@
       <image class='quanlity-icon' src='../../image/a6a.png'></image>
     </view>
   </view>
-  <view class='localsongs'>
+  <view class='localsongs' bindtap='jump'>
     <image class='icon' src='../../image/cm2_list_icn_rdi_new@2x.png'></image>
     <view class='content'>
       <text class='font'>我的电台</text>
@@ -24,7 +24,7 @@
       <image class='quanlity-icon' src='../../image/a6a.png'></image>
     </view>
   </view>
-  <view class='localsongs'>
+  <view class='localsongs' bindtap='jump'>
     <image class='icon' src='../../image/cm4_my_icn_fav@2x.png'></image>
     <view class='content'>
       <text class='font'>我的收藏</text>
