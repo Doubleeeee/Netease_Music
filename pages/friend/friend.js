@@ -1,7 +1,8 @@
 Component({
   properties: {
     // 定义innerText属性，可在组件使用时指定
-    scrollUp: Boolean
+    scrollUp: Boolean,
+    hidden: Boolean
   },
   // 私有数据，组件的初始数据
   data: {

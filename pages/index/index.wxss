@@ -26,5 +26,6 @@
   border-bottom: 2px solid #fff;
 }
 .main-content{
-  padding-top: 45px;
+  position: absolute;
+  top: 45px;
 }

@@ -13,4 +13,20 @@
   text-align: center;
   background-color: rgba(209, 50, 39, 0.9);
   color: #fff;
+  animation: animations1 .3s ease;
+}
+@keyframes animations1{
+	0%{transform:translateY(30px);}
+	40%{transform:translateY(18px);}
+	70%{transform:translateY(9px);}
+	100%{transform:translateY(0);}
+}
+.down{
+  animation: animations2 .3s ease;
+}
+@keyframes animations2{
+	0%{transform:translateY(0px);}
+	40%{transform:translateY(9px);}
+	70%{transform:translateY(18px);}
+	100%{transform:translateY(30px);}
 }

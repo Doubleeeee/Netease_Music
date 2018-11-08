@@ -4,10 +4,11 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'click here to start',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    scrollUp: true,
+    scrollTop: 0
   },
   //事件处理函数
   bindViewTap: function() {
@@ -55,5 +56,20 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onPageScroll: function(e){
+    
+    if(e.scrollTop>this.data.scrollTop){
+      this.setData({
+        scrollUp: false
+      });
+    }else{
+      this.setData({
+        scrollUp: true
+      });
+    }
+    this.setData({
+      scrollTop: e.scrollTop
+    });
   }
 })

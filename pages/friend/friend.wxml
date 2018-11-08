@@ -1,7 +1,7 @@
 <!--pages/page/friend.wxml-->
 <scroll-view class="friend-container" bindscroll="scrollUp">
   <friendShow comment="{{comment}}" count="{{count}}"></friendShow>
-  <view class='postComment' wx:if="{{scrollUp}}">
+  <view class='postComment {{hidden?"down":""}}' wx:if="{{scrollUp}}">
     +
   </view>
 </scroll-view>
