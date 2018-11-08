@@ -1,31 +1,7 @@
 <!--pages/page/friend.wxml-->
-<scroll-view class="friend-container">
-  <view class='show-container'>
-    <view class='show-title'>
-      <image src='../../image/cm2_default_artist_banner@2x.jpg'></image>
-      <view><text>welphenEDM</text>发布视频:</view>
-      <button>+ 关  注</button>
-    </view>
-    <view class='show-content'>
-      <text wx:if="{{comment.text}}">{{comment.commentArr.content}}</text>
-      <view class='content-main'>
-        <video class='main-video' wx:if="{{comment.media == 'video'}}" src='http://www.html5videoplayer.net/videos/madagascar3.mp4'></video>
-        <view class='main-picture' wx:elseif="{{media == 'picture'}}" >
-          <image wx:for="{{comment.commentArr.image}}" wx:key="index" src='{{item}}'></image>
-        </view>
-        <view class='main-music' wx:if="{{comment.music}}">
-          <audio id='audio{{comment.commentArr.music.index}}' src='{{comment.commentArr.music.src}}' poster='{{comment.commentArr.music.poster}}' name='{{comment.commentArr.music.name}}' author='{{comment.commentArr.music.author}}' action="play" controls loop></audio>
-        </view>
-      </view>
-      <view class='content-datashow'>
-        <view>
-          <image wx:if="{{!prised}}" bindtap='clickPrise' src='../../image/xg_gray.png'></image>
-          <image class='prised-t' wx:else bindtap='clickPrise' src='../../image/xi.png'></image>
-          <text>800</text>
-        </view>
-        <view><image src='../../image/cm2_play_icn_cmt_gray@2x.png'></image><text>47</text></view>
-        <view class='datashow-more'><image src='../../image/cm2_play_icn_more_gray@2x.png'></image></view>
-      </view>
-    </view>
+<scroll-view class="friend-container" bindscroll="scrollUp">
+  <friendShow comment="{{comment}}" count="{{count}}"></friendShow>
+  <view class='postComment' wx:if="{{scrollUp}}">
+    +
   </view>
 </scroll-view>

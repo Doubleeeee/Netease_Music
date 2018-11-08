@@ -1,0 +1,40 @@
+<view class='show-container' wx:for="{{comment}}" wx:key="index">
+    <view class='show-title'>
+      <image src='{{comment[index].user.userImg}}'></image>
+      <view><text>{{comment[index].user.userName}}</text>发布视频:</view>
+      <button>+ 关  注</button>
+    </view>
+    <view class='show-content'>
+      <text wx:if="{{comment[index].text}}">{{comment[index].commentArr.content}}</text>
+      <view class='content-main'>
+        <video class='main-video' wx:if="{{comment[index].media == 'video'}}" src='{{comment[index].commentArr.video}}'></video>
+        <view class='main-picture' wx:elseif="{{media == 'picture'}}" >
+          <image wx:for="{{comment[index].commentArr.image}}" wx:key="index" src='{{item}}'></image>
+        </view>
+        <view class='main-music' wx:if="{{comment[index].music}}">
+          <audio id='audio{{index}}' src='{{comment[index].commentArr.music.src}}' poster='{{comment[index].commentArr.music.poster}}' name='{{comment[index].commentArr.music.name}}' author='{{comment[index].commentArr.music.author}}' action="play" controls loop></audio>
+        </view>
+      </view>
+      <view class='content-datashow'>
+        <view>
+          <image data-userId="{{comment[index].user.userId}}" wx:if="{{!comment[index].prised}}" bindtap='clickPrise' src='../../image/xg_gray.png'></image>
+          <image data-userId="{{comment[index].user.userId}}" class='prised-t' wx:else bindtap='clickPrise' src='../../image/xi.png'></image>
+          <text data-userId="{{comment[index].user.userId}}">{{comment[index].priseNum}}</text>
+        </view>
+        <view>
+          <image src='../../image/cm2_play_icn_cmt_gray@2x.png'></image>
+          <text data-userId="{{comment[index].user.userId}}">{{comment[index].commentNum}}</text>
+        </view>
+        <view class='datashow-more'>
+          <image bindtap='showModle' src='../../image/cm2_play_icn_more_gray@2x.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='more-modle' bindtap='showModle' wx:if="{{showModle}}">
+    <view>
+      <text>下一首播放</text>
+      <text>不感兴趣，减少这类推荐</text>
+      <text>不再显示推荐动态</text>
+    </view>
+  </view>
